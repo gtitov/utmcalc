@@ -5,7 +5,9 @@ const center = document.getElementById("center")
 
 const calculateZone = () => {
     const longitudeValue = longitude.value
-    if(longitudeValue & longitudeValue >= -180 & longitudeValue <= 180) {
+    if(longitudeValue && longitudeValue >= -180 && longitudeValue <= 180) {
+        console.log(longitudeValue)
+        console.log(Boolean(longitudeValue))
         const zoneValue = parseInt(31 + (longitudeValue / 6))
         const centerValue = (zoneValue - 30) * 6 - 3
         zone.innerText = zoneValue
