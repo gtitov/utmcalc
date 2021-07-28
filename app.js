@@ -16,11 +16,11 @@ const calculateZone = () => {
     } else {
         zone.innerText = ""
         center.innerText = ""
-        presentAlertMultipleButtons()
+        presentAlert()
     }
 }
 
-function presentAlertMultipleButtons() {
+function presentAlert() {
     const alert = document.createElement('ion-alert');
     alert.header = 'Не получилось :с';
     alert.message = 'Введите значение от -180 до 180';
